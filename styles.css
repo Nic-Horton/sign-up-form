@@ -1,0 +1,14 @@
+/* font-family: 'Faster One', cursive;
+font-family: 'Gloria Hallelujah', cursive; */
+
+.bgPicture {
+    background-image: url(/mydawg.jpeg);
+    background-position: center;
+    background-size: auto;
+    width: 40vw;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
