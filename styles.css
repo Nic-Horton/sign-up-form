@@ -1,6 +1,7 @@
 /* font-family: 'Faster One', cursive;
 font-family: 'Gloria Hallelujah', cursive; */
 
+/* left side */
 .bgPicture {
     background-image: url(mydawg.jpeg);
     background-position: center;
@@ -36,4 +37,36 @@ h1 {
 .paw{
     width: 4rem;
     fill: gold
+}
+
+/* right side */
+
+.rightSide{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60vw;
+    justify-content: center;
+}
+
+.fonts{
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.sectionOne{
+    margin-bottom: 5vh;
+}
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
 }
