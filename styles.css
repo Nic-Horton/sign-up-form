@@ -1,31 +1,38 @@
 /* font-family: 'Faster One', cursive;
 font-family: 'Gloria Hallelujah', cursive; */
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color: coral;
+}
 /* left side */
+
 .bgPicture {
     background-image: url(mydawg.jpeg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh;
+    background-size: 100vh, 100vw;
     width: 40vw;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
-}
-
-.content, .logo {
     display: flex;
     flex-flow: row wrap;
 }
+
 .logo {
+    display: flex;
     position: relative;
     justify-content:center;
-    gap: 2.5vw;
+    gap: 1.5rem;
     align-items: center;
-    background-color: rgba(9, 8, 8, 0.242);
-    color: gold;
+    background-color: rgba(9, 8, 8, 0.326);
     top: 20vh;
+    padding: 30px;
 }
 h1 {
     font-family: 'Faster One', cursive, Arial, Helvetica, sans-serif;
@@ -35,8 +42,9 @@ h1 {
 }
 
 .paw{
-    width: 4rem;
-    fill: gold
+    min-width: 5rem;
+    max-width: 5rem;
+    fill: coral;
 }
 
 /* right side */
@@ -46,16 +54,23 @@ h1 {
     flex-flow: column nowrap;
     width: 60vw;
     justify-content: center;
+    background-color: rgb(79, 12, 94);
 }
 
 .fonts{
-    font-family: 'Dosis', sans-serif;
-    font-size: larger;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .sectionOne{
-    margin-bottom: 5vh;
+    width: 80%;
+    margin-bottom: 6vh;
+}
+
+/* form */
+
+p {
+    margin-top: 20px;
 }
 
 .form{
@@ -64,9 +79,52 @@ h1 {
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 5vh;
+    border-style: solid;
+    
 }
 .input{
     display: flex;
     flex-flow: column wrap;
     width: 40%;
 }
+
+.side {
+    padding-left: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+a:hover {
+    color: white;
+}
+
+input {
+    background-color: rgb(79, 12, 94);
+    border-style: solid;
+    border-color: coral;
+}
+
+button {
+    background-color: rgb(79, 12, 94);
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aqua;
+    padding: 1rem 1.2rem;
+
+}
+
+button:hover {
+    background-color: aqua;
+    color: rgb(79, 12, 94);
+}
+
+.member {
+    font-size: 20px;
+}
+
