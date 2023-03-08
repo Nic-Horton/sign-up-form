@@ -1,5 +1,3 @@
-/* font-family: 'Faster One', cursive;
-font-family: 'Gloria Hallelujah', cursive; */
 * {
     margin: 0px;
     padding: 0px;
@@ -13,7 +11,7 @@ font-family: 'Gloria Hallelujah', cursive; */
     background-image: url(mydawg.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh, 100vw;
+    background-size: cover;
     width: 40vw;
 }
 
@@ -69,8 +67,8 @@ h1 {
 
 /* form */
 
-p {
-    margin-top: 20px;
+.formTitle{
+    width: 100%;
 }
 
 .form{
@@ -80,7 +78,7 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 5vh;
-    border-style: solid;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.683);
     
 }
 .input{
@@ -107,6 +105,10 @@ input {
     border-color: coral;
 }
 
+input:focus {
+    outline-color: aqua;
+}
+
 button {
     background-color: rgb(79, 12, 94);
     border-style: solid;
@@ -128,3 +130,63 @@ button:hover {
     font-size: 20px;
 }
 
+/* rescale */
+
+@media only screen and (max-width: 830px)  {
+    .content, .content > .sectionOne{
+        flex-flow: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+    .bgPicture{
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 1.5rem;
+    }
+    .sectionOne{
+        width: auto;
+    }
+    .rightSide{
+        width: auto;
+        height: 100vh;
+        
+    }
+    .side{
+        padding-left: 0;
+    }
+    .form{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 1rem;
+        height: 1.5rem;
+        width: 60vw;
+    }
+    .button,
+    .sectionThree{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 50vw;
+        padding: 1rem 1.2rem;
+    }
+}

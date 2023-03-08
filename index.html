@@ -36,41 +36,53 @@
 						ole doggo?<br />
 						Sign up now to make this doggo proud.
 					</p>
+					<br />
 					<p>Did I mention there was puppers!?</p>
 				</div>
+
 				<form action="sign-up-form" method="post">
-					<p class="fonts side">Let's do this!</p>
 					<div class="form side">
+						<p class="fonts formTitle">Let's do this!</p>
+
 						<div class="input">
 							<label for="first-name">First Name</label>
-							<input id="first-name" name="first-name" type="text" />
+							<input id="first-name" name="first-name" type="text" required />
 						</div>
 						<div class="input">
 							<label for="last-name">Last Name</label>
-							<input id="last-name" name="last-name" type="text" />
+							<input id="last-name" name="last-name" type="text" required />
 						</div>
 						<div class="input">
 							<label for="email">Email</label>
-							<input id="email" name="email" type="email" />
+							<input id="email" name="email" type="email" required />
 						</div>
 						<div class="input">
 							<label for="phone">Phone Number</label>
-							<input id="phone" name="phone" type="tel" />
+							<input
+								id="phone"
+								name="phone"
+								type="tel"
+								minlength="10"
+								maxlength="10"
+							/>
 						</div>
 						<div class="input">
 							<label for="password">Password</label>
-							<input id="password" name="password" type="password" />
+							<input id="password" name="password" type="password" required />
 						</div>
 						<div class="input">
 							<label for="confirmPW">Confirm Password</label>
-							<input id="confirmPW" name="confirmPW" type="password" />
+							<input id="confirmPW" name="confirmPW" type="password" required />
 						</div>
 					</div>
+					<div class="button side">
+						<button type="submit">Create Account</button>
+					</div>
 				</form>
+
 				<div class="sectionThree side">
-					<button type="submit">Create Account</button>
 					<p class="fonts member">
-						Already have an account? <a href="">Log In</a>
+						Already have an account? <a href="#">Log In</a>
 					</p>
 				</div>
 			</div>
