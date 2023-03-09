@@ -10,6 +10,7 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Faster+One&display=swap');
 		</style>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div class="content">
@@ -68,15 +69,27 @@
 						</div>
 						<div class="input">
 							<label for="password">Password</label>
-							<input id="password" name="password" type="password" required />
+							<input
+								id="password"
+								name="password"
+								type="password"
+								onChange="validate()"
+								required
+							/>
 						</div>
 						<div class="input">
 							<label for="confirmPW">Confirm Password</label>
-							<input id="confirmPW" name="confirmPW" type="password" required />
+							<input
+								id="confirmPW"
+								name="confirmPW"
+								type="password"
+								onChange="validate()"
+								required
+							/>
 						</div>
 					</div>
 					<div class="button side">
-						<button type="submit">Create Account</button>
+						<button id="btn" type="submit">Create Account</button>
 					</div>
 				</form>
 
